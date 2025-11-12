@@ -298,7 +298,10 @@ async def get_subscription_link_for_key(key_data: dict, app_type: str = "plain",
             custom_url = f"v2raytun://import/{quote(subscription_link, safe='')}"
         elif app_type == "streisand":
             from urllib.parse import quote
-            custom_url = f"streisand://import/{quote(subscription_link, safe='')}"
+            import secrets
+            # Streisand требует #NAME в конце для корректного импорта
+            sub_name = f"VPN_{secrets.token_hex(3)}"
+            custom_url = f"streisand://import/{quote(subscription_link, safe='')}#{sub_name}"
         else:
             custom_url = subscription_link
 
