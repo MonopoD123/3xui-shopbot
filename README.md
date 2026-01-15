@@ -117,7 +117,7 @@
 2) Выполните:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/kzolotarev95/3xui-shopbot/main/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/MonopoD123/3xui-shopbot/main/install.sh | sudo bash
 ```
 
 3) Следуйте инструкциям установщика:
