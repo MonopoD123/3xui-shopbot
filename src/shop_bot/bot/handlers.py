@@ -152,7 +152,7 @@ async def show_main_menu(message: types.Message, edit_message: bool = False):
     is_admin_flag = is_admin(user_id)
 
     custom_main_text = get_setting("main_menu_text")
-    text = (custom_main_text or "<b>🔒 ZKS95 VPN – стабильность и скорость для вас</b>")
+    text = (custom_main_text or "<b>🔒 AntiLTE VPN – стабильность для вас! Обходим белые списки уверенно</b>")
     keyboard = keyboards.create_main_menu_keyboard(user_keys, trial_available, is_admin_flag)
     
 
